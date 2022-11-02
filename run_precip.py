@@ -3,16 +3,17 @@ import gc
 import intake
 import xarray as xr
 import xesmf as xe
-
+import numpy as np
 from dask.diagnostics import ProgressBar
+
 
 # Using the CMIP6 ensemble stored in google cloud by Pangeo project and opening the data store object
 col_url = 'https://storage.googleapis.com/cmip6/pangeo-cmip6.json'
 col = intake.open_esm_datastore(col_url)
 
 # Scenarios we're interested in.
-scenarios = ['historical', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
-# scenarios = ['ssp585',]
+# scenarios = ['historical', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
+scenarios = ['ssp585',]
 
 # Create dict to hold the extracted dataset objects for each scenario.
 print('Loading ensemble...')
