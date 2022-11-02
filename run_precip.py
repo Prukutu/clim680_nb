@@ -3,8 +3,6 @@ import gc
 import intake
 import xarray as xr
 import xesmf as xe
-import numpy as np
-import xclim
 
 from dask.diagnostics import ProgressBar
 
