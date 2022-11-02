@@ -6,8 +6,6 @@ import xesmf as xe
 
 from dask.diagnostics import ProgressBar
 
-xclim.set_options(data_validation='warn')
-
 # Using the CMIP6 ensemble stored in google cloud by Pangeo project and opening the data store object
 col_url = 'https://storage.googleapis.com/cmip6/pangeo-cmip6.json'
 col = intake.open_esm_datastore(col_url)
