@@ -10,8 +10,8 @@ col_url = 'https://storage.googleapis.com/cmip6/pangeo-cmip6.json'
 col = intake.open_esm_datastore(col_url)
 
 # Scenarios we're interested in.
-scenarios = ['historical', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
-# scenarios = ['ssp585',]
+# scenarios = ['historical', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
+scenarios = ['ssp585',]
 
 # Create dict to hold the extracted dataset objects for each scenario.
 print('Loading ensemble...')
